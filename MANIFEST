@@ -3,6 +3,8 @@ Changes
 Makefile.PL
 MANIFEST
 t/test.t
+t/test2.t
 t/pod.t
 COPYING
 README
+META.yml                                 Module meta-data (added by MakeMaker)

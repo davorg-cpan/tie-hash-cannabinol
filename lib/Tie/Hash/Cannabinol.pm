@@ -28,9 +28,10 @@ won't be able to retrieve any information you ask it for. Any information
 that it does return will be pulled at random from its keys.
 
 Oh, and the return value from C<exists> isn't to be trusted either :)
-package Tie::Hash::Cannabinol; 
 
 =cut
+
+package Tie::Hash::Cannabinol; 
 
 use strict;
 use vars qw($VERSION @ISA);
@@ -101,6 +102,9 @@ perl(1), perltie(1), Tie::StdHash(1)
 
 #
 # $Log$
+# Revision 1.8  2004/10/23 09:47:21  dave
+# Fixed problems caused by moving POD around in the last version.
+#
 # Revision 1.7  2004/10/23 09:36:50  dave
 # Improved test coverage.
 #
