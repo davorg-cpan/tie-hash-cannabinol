@@ -15,6 +15,9 @@
 # $Id$
 #
 # $Log$
+# Revision 1.6  2002/09/23 19:02:28  dave
+# Fixed to work with Perl 5.8.0.
+#
 # Revision 1.5  2002/07/12 18:32:21  dave
 # Corrected Attribute::Handlers dependency.
 #
@@ -36,7 +39,7 @@ package Tie::Hash::Cannabinol;
 use strict;
 use vars qw($VERSION @ISA);
 use Tie::Hash;
-use Attribute::Handlers autotie => { __CALLER__::Stoned => __PACKAGE__ };
+use Attribute::Handlers autotie => { "__CALLER__::Stoned" => __PACKAGE__ };
 
 $VERSION = sprintf "%d.%02d", '$Revision$ ' =~ /(\d+)\.(\d+)/;
 @ISA = qw(Tie::StdHash);
