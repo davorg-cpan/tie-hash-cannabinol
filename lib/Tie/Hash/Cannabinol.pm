@@ -15,6 +15,9 @@
 # $Id$
 #
 # $Log$
+# Revision 1.4  2001/12/09 19:12:54  dave
+# Added Attribute::Handlers interface.
+#
 # Revision 1.3  2001/09/05 19:48:15  dave
 # fixed a very serious bug where instead of returning a random value from the hash we were, in fact, almost always returning C<undef>.
 #
@@ -30,6 +33,7 @@ package Tie::Hash::Cannabinol;
 use strict;
 use vars qw($VERSION @ISA);
 use Tie::Hash;
+use Attribute::Handlers autotie => { __CALLER__::Stoned => __PACKAGE__ };
 
 $VERSION = sprintf "%d.%02d", '$Revision$ ' =~ /(\d+)\.(\d+)/;
 @ISA = qw(Tie::StdHash);
@@ -71,8 +75,13 @@ Tie::Hash::Cannabinol - Perl extension for creating hashes that forget things
   my %hash;
   tie %hash, 'Tie::Hash::Cannabinol';
 
+or
+
+  my %hash : Stoned;
+
   # % hash can now be treated exactly like a normal hash - but don't trust
   # anything it tells you.
+
 
 =head1 DESCRIPTION
 
