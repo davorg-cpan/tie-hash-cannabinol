@@ -15,6 +15,9 @@
 # $Id$
 #
 # $Log$
+# Revision 1.5  2002/07/12 18:32:21  dave
+# Corrected Attribute::Handlers dependency.
+#
 # Revision 1.4  2001/12/09 19:12:54  dave
 # Added Attribute::Handlers interface.
 #
@@ -28,7 +31,7 @@
 # Initial revision
 #
 
-package Tie::Hash::Cannabinol;
+package Tie::Hash::Cannabinol; 
 
 use strict;
 use vars qw($VERSION @ISA);
