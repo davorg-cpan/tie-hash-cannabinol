@@ -15,6 +15,9 @@
 # $Id$
 #
 # $Log$
+# Revision 1.2  2001/09/03 19:58:08  dave
+# Minor fixes
+#
 # Revision 1.1  2001/09/02 17:06:18  dave
 # Initial revision
 #
@@ -52,6 +55,7 @@ sub EXISTS {
 
 1;
 __END__
+
 
 =head1 NAME
 
