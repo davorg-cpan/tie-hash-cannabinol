@@ -15,6 +15,9 @@
 # $Id$
 #
 # $Log$
+# Revision 1.3  2001/09/05 19:48:15  dave
+# fixed a very serious bug where instead of returning a random value from the hash we were, in fact, almost always returning C<undef>.
+#
 # Revision 1.2  2001/09/03 19:58:08  dave
 # Minor fixes
 #
@@ -46,7 +49,7 @@ sub FETCH {
 
   return if rand > .75;
 
-  return $self->{rand keys %$self};
+  return $self->{(keys %$self)[rand keys %$self]};
 }
 
 sub EXISTS {
@@ -73,14 +76,14 @@ Tie::Hash::Cannabinol - Perl extension for creating hashes that forget things
 
 =head1 DESCRIPTION
 
-Tie::Hash::Cannabinol is a completely useless demostration of how to use
+Tie::Hash::Cannabinol is a completely useless demonstration of how to use
 Tie::StdHash to pervert the behaviour of Perl hashes. Once a hash has been
 C<tie>d to Tie::Hash::Cannabinol, there is a 25% chance that it will forget
 anything that you tell it immediately and a further 25% chance that it 
 won't be able to retrieve any information you ask it for. Any information
-that it does return will be pulled at random from it's keys.
+that it does return will be pulled at random from its keys.
 
-Oh, and the return value from C<exists> isn't to be tursted either :)
+Oh, and the return value from C<exists> isn't to be trusted either :)
 
 =head1 AUTHOR
 
