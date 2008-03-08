@@ -1,6 +1,7 @@
 use Module::Build;
 my $build = Module::Build->new(
 	module_name => 'Tie::Hash::Cannabinol',
+	dist_version => '1.10',
 	license => 'perl',
 	requires => {
 		perl		      => '5.6.0',
