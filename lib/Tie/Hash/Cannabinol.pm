@@ -87,17 +87,17 @@ __END__
 
 =head1 AUTHOR
 
-Dave Cross <dave@dave.org.uk>
+Dave Cross <dave@mag-sol.com>
 
 =head1 UPDATES
 
 The latest version of this module will always be available from
-L<http://dave.org.uk/code/Tie-Hash-Cannabinol> or from CPAN
+L<http://code.mag-sol.com/Tie-Hash-Cannabinol> or from CPAN
 at L<http://search.cpan.org/dist/Tie-Hash-Cannabinol/>.
 
 =head1 COPYRIGHT
 
-Copyright (C) 2001, Magnum Solutions Ltd.  All Rights Reserved.
+Copyright (C) 2001-8, Magnum Solutions Ltd.  All Rights Reserved.
 
 =head1 LICENSE
 
