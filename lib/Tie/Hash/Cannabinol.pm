@@ -33,7 +33,9 @@ Oh, and the return value from C<exists> isn't to be trusted either :)
 
 package Tie::Hash::Cannabinol; 
 
+use 5.006;
 use strict;
+use warnings;
 use vars qw($VERSION @ISA);
 use Tie::Hash;
 use Attribute::Handlers autotie => { "__CALLER__::Stoned" => __PACKAGE__ };
