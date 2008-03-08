@@ -38,7 +38,7 @@ use vars qw($VERSION @ISA);
 use Tie::Hash;
 use Attribute::Handlers autotie => { "__CALLER__::Stoned" => __PACKAGE__ };
 
-$VERSION = sprintf "%d.%02d", '$Revision$ ' =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d", '$Revision$ ' =~ /(\d+)/;
 @ISA = qw(Tie::StdHash);
 
 =head2 STORE
@@ -97,6 +97,8 @@ at L<http://search.cpan.org/dist/Tie-Hash-Cannabinol/>.
 
 Copyright (C) 2001, Magnum Solutions Ltd.  All Rights Reserved.
 
+=head1 LICENSE
+
 This script is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
 
@@ -105,33 +107,3 @@ modify it under the same terms as Perl itself.
 perl(1), perltie(1), Tie::StdHash(1)
 
 =cut
-
-#
-# $Log$
-# Revision 1.9  2005/08/14 11:35:57  dave
-# Added details of where to get updates.
-#
-# Revision 1.8  2004/10/23 09:47:21  dave
-# Fixed problems caused by moving POD around in the last version.
-#
-# Revision 1.7  2004/10/23 09:36:50  dave
-# Improved test coverage.
-#
-# Revision 1.6  2002/09/23 19:02:28  dave
-# Fixed to work with Perl 5.8.0.
-#
-# Revision 1.5  2002/07/12 18:32:21  dave
-# Corrected Attribute::Handlers dependency.
-#
-# Revision 1.4  2001/12/09 19:12:54  dave
-# Added Attribute::Handlers interface.
-#
-# Revision 1.3  2001/09/05 19:48:15  dave
-# fixed a very serious bug where instead of returning a random value from the hash we were, in fact, almost always returning C<undef>.
-#
-# Revision 1.2  2001/09/03 19:58:08  dave
-# Minor fixes
-#
-# Revision 1.1  2001/09/02 17:06:18  dave
-# Initial revision
-#
