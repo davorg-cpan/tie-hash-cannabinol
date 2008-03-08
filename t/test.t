@@ -1,4 +1,4 @@
-use Test::Simple tests => 5;
+use Test::More tests => 5;
 
 use Tie::Hash::Cannabinol;
 ok(1);
