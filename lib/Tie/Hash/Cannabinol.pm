@@ -40,7 +40,7 @@ use vars qw($VERSION @ISA);
 use Tie::Hash;
 use Attribute::Handlers autotie => { "__CALLER__::Stoned" => __PACKAGE__ };
 
-$VERSION = sprintf "%d", '$Revision$ ' =~ /(\d+)/;
+$VERSION = 1.10;
 @ISA = qw(Tie::StdHash);
 
 =head2 STORE
