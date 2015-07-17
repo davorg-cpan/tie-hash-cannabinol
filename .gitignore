@@ -1,0 +1,12 @@
+Tie-Hash-Cannabinol-*.tar.gz
+Tie-Hash-Cannabinol/
+Build
+Changes
+META.json
+META.yml
+MYMETA.json
+MYMETA.yml
+Makefile.PL
+_build/
+blib/
+cover_db/
