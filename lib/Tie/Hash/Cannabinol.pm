@@ -73,7 +73,7 @@ sub FETCH {
 
 =head2 EXISTS
 
-Gives very dodgy information about the existance of keys in the hash.
+Gives very dodgy information about the existence of keys in the hash.
 
 =cut
 
