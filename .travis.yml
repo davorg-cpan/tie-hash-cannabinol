@@ -11,7 +11,7 @@ perl:
   - "5.28"
 
 before_install:
-  cpanm -n Module::Build
-  cpanm -n Devel::Cover::Report::Coveralls
+  - cpanm -n Module::Build
+  - cpanm -n Devel::Cover::Report::Coveralls
 script:
   perl Build.PL && ./Build build && cover -test -report coveralls
