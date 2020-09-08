@@ -36,12 +36,11 @@ package Tie::Hash::Cannabinol;
 use 5.006;
 use strict;
 use warnings;
-use vars qw($VERSION @ISA);
 use Tie::Hash;
 use Attribute::Handlers autotie => { "__CALLER__::Stoned" => __PACKAGE__ };
 
-$VERSION = 1.10;
-@ISA = qw(Tie::StdHash);
+our $VERSION = '1.12.0';
+our @ISA = qw(Tie::StdHash);
 
 =head2 STORE
 
