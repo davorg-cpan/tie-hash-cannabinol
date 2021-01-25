@@ -24,6 +24,9 @@ my $build = Module::Build->new(
               url  => 'git://github.com/davorg/tie-hash-cannabinol.git',
               web  => 'https://github.com/davorg/tie-hash-cannabinol',
             },
+            bugtracker => {
+              web  => 'https://github.com/davorg/tie-hash-cannabinol/issues',
+            },
           },
         },
 );
