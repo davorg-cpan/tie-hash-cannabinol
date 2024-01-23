@@ -20,11 +20,11 @@ my $build = Module::Build->new(
           resources => {
             repository => {
               type => 'git',
-              url  => 'git://github.com/davorg/tie-hash-cannabinol.git',
-              web  => 'https://github.com/davorg/tie-hash-cannabinol',
+              url  => 'git://github.com/davorg-cpan/tie-hash-cannabinol.git',
+              web  => 'https://github.com/davorg-cpan/tie-hash-cannabinol',
             },
             bugtracker => {
-              web  => 'https://github.com/davorg/tie-hash-cannabinol/issues',
+              web  => 'https://github.com/davorg-cpan/tie-hash-cannabinol/issues',
             },
           },
         },
